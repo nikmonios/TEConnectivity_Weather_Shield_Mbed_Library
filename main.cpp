@@ -1,12 +1,24 @@
-/*********************************************
-* TO DO:
-* add new serial for ESP8266 communication
-* 
-**********************************************/
+/* =======================================================================*
+ *                                                                        *
+ * Based on William Markezana's work for TE Connectivity                  *
+ * (TEConnectivity/Weather_Shield_Arduino_Library)                        *
+ * https://github.com/TEConnectivity/Weather_Shield_Arduino_Library       *
+ *                                                                        *
+ *                                                                        *
+ *                                                                        *
+ *                                                                        *
+ * created by: Nikolaos Monios, MSc Embedded & Control Systems Engineer   *
+ * moniosni@gmail.com                                                     *
+ * Athens, Greece 2018                                                    *
+ *                                                                        *
+ * TO DO LIST:                                                            *
+ *                                                                        *
+ * =======================================================================*  
+*/
 
 #include "TEWeatherShield.h"
 
-Serial pc(USBTX,USBRX);     // UART tx, rx (to be sent to PC for debug, and later to esp8266
+Serial pc(USBTX,USBRX);     // UART tx, rx (to be sent to PC for debug
 
 static TEWeatherShield weatherShield; // load the shield
 
